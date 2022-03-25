@@ -7,5 +7,3 @@ Section with id=welcomeAndForm
 
 Sections with id=forecast
     This will be blank in index.html but will be written by a DOM depending on the output of the webform
-
-
