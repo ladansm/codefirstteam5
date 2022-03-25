@@ -1,5 +1,5 @@
 # codefirstteam5
-This is how our project will work:
+This is how the web app will work:
 
 Section with id=welcomeAndForm
     Welcome & introduction
