@@ -29,10 +29,9 @@
             <!--LOCATION-->
             <h3>Select your location</h3>
             <div class="col-3">
-                <img alt='image of a earth'id="image-earth"src="https://media.istockphoto.com/vectors/happy-earth-doodle-vector-id1187712122?k=20&m=1187712122&s=612x612&w=0&h=eU3dUQCXWbzEmdcXX8CWox_ZT3LrxgxWd_H_BzA6EL0="width="300" >
+                <img id="image-earth"src="https://media.istockphoto.com/vectors/happy-earth-doodle-vector-id1187712122?k=20&m=1187712122&s=612x612&w=0&h=eU3dUQCXWbzEmdcXX8CWox_ZT3LrxgxWd_H_BzA6EL0=" akt="image of earth" >
             </div><br>
         
-            <!--Search button-->
             <form id="entercity">
                 <div class="row"> 
                     <div class="col-4">
@@ -44,26 +43,28 @@
                             />
                         </div>
                     </div>
-                    <div class="col-3">
-                        <button type="submit" class="btn btn-primary" id="search-button" >Search</button>
-                    </div>
-                </div>
+                
             </form>
         </div>
         <!--WEATHER web form-->
+       
+          
         <h3 id="test">Choose your ideal weather</h3>
         <div class="row">
-            <div class="col-2">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                Select weather descripton
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Sun</a></li>
-                <li><a class="dropdown-item" href="#">Cloud</a></li>
-                <li><a class="dropdown-item" href="#">Rain</a></li>
-                <li><a class="dropdown-item" href="#">Snow</a></li>
-                </ul>
-            </div>
+            <div class="col-3">
+                
+                <select class="form-control" id="exampleFormControlSelect1" placeholder="Choose your ideal weather">
+                    <option>Choose your ideal weather</option>
+                    <option>Sun</option>
+                  <option>Cloud</option>
+                  <option>Rain</option>
+                  <option>Rain</option>
+                  <option>Snow</option>
+                
+            </select>
+              </div>
+            
+
             <div class="col-2">
                 <div class="mb-3">
                     <input
@@ -73,22 +74,23 @@
                     />
                 </div>
             </div>
-        </div>
-
-        <div>
 
         </div>
+
+        
         <!--DATE form-->
         <h3 id="test">Choose your ideal date</h3>
                 <form action="/action_page.php">
                     <input type="date" id="birthday" name="birthday">
                 </form>
             
+    <div class="col-3">
+        <button type="submit" class="btn btn-primary" id="book-button" >Book</button>
+            </div>
+        </div>
     </section>
 
-    <section id="forecast">
-        <!-- This section will be the forecast and will defined by the DOM -->
-    </section>
+
 <hr>
     <footer>     
         <p>please see the github for the source code <a href="https://github.com/ladansm/codefirstteam5">here</a></p>
