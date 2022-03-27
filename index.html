@@ -15,7 +15,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to group 5's project website!</title>
-    <link rel="stylesheet" href="index.css"> 
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -25,14 +25,16 @@
             <h2>Why wait for better weather?</h2>
             <p>Finally, you booked your days off and it is time for a break? Great! We are here to help you to get the best break of your life. Indeed, YOU choose the weather on the dates and location that you are going to</p>
         </div>
+        
+        <!--LOCATION-->
         <div id="form">
-            <!--LOCATION-->
             <h3 id="selectLocation">Select your location</h3>
             <div class="col-3">
                 <img id="image-earth"src="https://media.istockphoto.com/vectors/happy-earth-doodle-vector-id1187712122?k=20&m=1187712122&s=612x612&w=0&h=eU3dUQCXWbzEmdcXX8CWox_ZT3LrxgxWd_H_BzA6EL0=" akt="image of earth" >
             </div><br>
         
             <form id="entercity" required>
+            <!-- this 'required' element doesnt work-->
                 <div class="row"> 
                     <div class="col-4">
                         <div class="mb-3">
@@ -41,9 +43,9 @@
                                 placeholder="Enter the city"
                                 class="form-control"id="city-input"
                                 required>
+                                <!-- this 'required' element doesnt work-->
                         </div>
                     </div>
-                
             </form>
         </div>
 
@@ -52,6 +54,7 @@
         <div class="row">
             <div class="col-3">
                 <select class="form-control" id="weather-input" required>
+                <!-- this 'required' element doesnt work-->
                     <option>Choose your ideal weather</option>
                     <option>Sun</option>
                     <option>Cloud</option>
@@ -60,23 +63,30 @@
                     <option>Snow</option>
                 </select>
             </div>
+
+            <!-- Temperature form-->
             <div class="col-2">
                 <div class="mb-3">
                     <input
-                        type="text"
+                        type="number"
+                        onkeypress="return onlyNumberKey(event)" 
+                        min="-40"
+                        max="50"
                         placeholder="Enter the temperature"
-                        class="form-control"id="temp-input"
+                        class="form-control"
+                        id="temp-input"
                         required>
+                        <!-- this 'required' element doesnt work-->
                 </div>
             </div>
         </div>
 
-        
         <!--DATE form-->
         <h3 id="test">Choose your ideal date</h3>
-                <form action="/action_page.php">
-                    <input type="date" id="date-input" name="date" required>
-                </form>
+            <form action="/action_page.php">
+                <input type="date" id="date-input" name="date" required>
+                <!-- this 'required' element doesnt work-->
+            </form>
             
             <div class="col-3">
                 <button type="submit" class="btn btn-primary" id="book-button" >Book</button>
@@ -84,7 +94,6 @@
 
         
     </section>
-
 
 <hr>
     <footer>     
