@@ -1,4 +1,3 @@
-// blablabla
 function test(event){
     event.preventDefault(event);
     let forecast=document.querySelector("#welcomeAndForm")
@@ -11,14 +10,13 @@ function test(event){
     let weatherInput=document.querySelector('#weather-input')
     let weather=weatherInput.value
     
-    forecast.innerHTML=`<h3>Thank you for booking your break with us</h3>
+    forecast.innerHTML = `<h3>Thank you for booking your break with us</h3>
     <h4>Summary</h4>
-    <div id="date">${date}</div>
-    <div id="location">${city}</div>
-    <div id="weather">${weather}</div>
-    <div id="temp">${temp}</div>`
-
+    <div id="date">The weather on ${date}</div>
+    <div id="location">In ${city}</div>  
+    <div id="weather">Will be: ${weather}y</div>
+    <div id="temp">With a temperature of: ${temp}</div>`
 }
-let searchbutton=document.querySelector("#book-button")
-searchbutton.addEventListener("click",test)
 
+let searchbutton = document.querySelector("#book-button")
+searchbutton.addEventListener("click",test)
