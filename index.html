@@ -29,11 +29,11 @@
         <!--LOCATION-->
         <div id="form">
             <h3 id="selectLocation">Select your location</h3>
-            <div class="col-3">
+            <div class="center">
                 <img id="image-earth"src="https://media.istockphoto.com/vectors/happy-earth-doodle-vector-id1187712122?k=20&m=1187712122&s=612x612&w=0&h=eU3dUQCXWbzEmdcXX8CWox_ZT3LrxgxWd_H_BzA6EL0=" akt="image of earth" >
             </div><br>
         
-            <form name="mainForm" id="mainForm">
+            <form name="mainForm" id="mainForm" required>
                 <div class="row"> 
                     <div class="col-4">
                         <div class="mb-3">
@@ -43,16 +43,17 @@
                                 class="form-control"
                                 name="city-input"
                                 id="city-input"
-                                required>
+                                >
                                 <!-- this 'required' element doesnt work-->
                         </div>
                     </div>
+                </div>
 
                 <!--WEATHER web form-->
                 <h3 id="test">Choose your ideal weather</h3>
                 <div class="row">
                     <div class="col-3">
-                        <select class="form-control" id="weather-input" required>
+                        <select class="form-control" id="weather-input" >
                             <!-- this 'required' element doesnt work-->
                             <option>Choose your ideal weather</option>
                             <option>Sun</option>
@@ -73,7 +74,7 @@
                             min="-40"
                             placeholder="Enter the temperature"
                             class="form-control"
-                            required>
+                            >
                             <!-- this 'required' element doesnt work-->
                     </div>
                 </div>
@@ -81,7 +82,7 @@
                 <!--DATE form-->
                 <h3 id="test">Choose your ideal date</h3>
                 
-                <input type="date" id="date-input" name="date" required>
+                <input type="date" id="date-input" name="date" >
                 <!-- this 'required' element doesnt work-->
 
                 <div class="col-3">

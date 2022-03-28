@@ -9,7 +9,12 @@ section{
     text-align: center;
 }
 #image-earth{
-    display: block;
-    text-align: center;
     width:200px;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
