@@ -52,14 +52,14 @@
                 <!--WEATHER web form-->
                 <h3 id="test">Choose your ideal weather</h3>
                 <div class="row">
-                    <div class="col-3">
-                        <select class="form-control" id="weather-input">
+                    <div class="col-4">
+                        <select class="form-control" name="weather-input" id="weather-input">
                             <!-- this 'required' element doesnt work-->
-                            <option>Choose your ideal weather</option>
-                            <option>Sun</option>
-                            <option>Cloud</option>
-                            <option>Rain</option>
-                            <option>Snow</option>
+                            <option value="" selected>Choose your ideal weather</option>
+                            <option value="Sun">Sun</option>
+                            <option value="Cloud">Cloud</option>
+                            <option value="Rain">Rain</option>
+                            <option value="Snow">Snow</option>
                         </select>
                     </div>
                 </div>
@@ -68,12 +68,14 @@
                 <div class="col-3">
                     <div class="mb-3">
                         <input
-                            id="temp-input"   
+                            id="temp-input"
+                            name="temp-input"  
                             type="number"
                             max="50"
                             min="-40"
                             placeholder="Enter the temperature"
-                            class="form-control">
+                            class="form-control"
+                            required>
                             <!-- a 'required' element here doesnt work-->
                     </div>
                 </div>
