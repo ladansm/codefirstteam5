@@ -18,8 +18,8 @@ function makeForecast(event){
     <div id="location">In ${city}</div>  
     <div id="weather">The sky will have: ${weather}</div>
     <div id="temp">With a temperature of: ${temp}</div>`
-}
+};
 
-let bookButton = document.querySelector("#book-button")
 //add an event listener that will listen for the click of bookButton and then execute function test()
-bookButton.addEventListener("click",makeForecast)
+let bookButton = document.querySelector("#book-button");
+bookButton.addEventListener("submit",makeForecast);
