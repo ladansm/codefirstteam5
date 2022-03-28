@@ -36,6 +36,6 @@ function makeForecast(event){
     <div id="temp">With a temperature of: ${temp}&deg;C</div>`
 };
 
-//add an event listener that will listen for the click of bookButton and then execute function test()
+//add an event listener that will listen for the click of bookButton and then execute function makeForecast()
 let bookButton = document.querySelector("#book-button");
 bookButton.addEventListener("click",makeForecast);
