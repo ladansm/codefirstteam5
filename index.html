@@ -14,7 +14,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to group 5's project website!</title>
+    <title>Welcome to group 5's project website: The weather request app</title>
     <link rel="stylesheet" href="index.css">
 </head>
 
@@ -33,8 +33,7 @@
                 <img id="image-earth"src="https://media.istockphoto.com/vectors/happy-earth-doodle-vector-id1187712122?k=20&m=1187712122&s=612x612&w=0&h=eU3dUQCXWbzEmdcXX8CWox_ZT3LrxgxWd_H_BzA6EL0=" akt="image of earth" >
             </div><br>
         
-            <form id="entercity" required>
-            <!-- this 'required' element doesnt work-->
+            <form name="mainForm" id="mainForm">
                 <div class="row"> 
                     <div class="col-4">
                         <div class="mb-3">
@@ -42,56 +41,54 @@
                                 type="text"
                                 placeholder="Enter the city"
                                 class="form-control"
+                                name="city-input"
                                 id="city-input"
                                 required>
                                 <!-- this 'required' element doesnt work-->
                         </div>
                     </div>
-            </form>
-        </div>
 
-        <!--WEATHER web form-->
-        <h3 id="test">Choose your ideal weather</h3>
-        <div class="row">
-            <div class="col-3">
-                <select class="form-control" id="weather-input" required>
-                <!-- this 'required' element doesnt work-->
-                    <option>Choose your ideal weather</option>
-                    <option>Sun</option>
-                    <option>Cloud</option>
-                    <option>Rain</option>
-                    <option>Rain</option>
-                    <option>Snow</option>
-                </select>
-            </div>
-
-            <!-- Temperature form-->
-            <div class="col-2">
-                <div class="mb-3">
-                    <input
-                        id="temp-input"    
-                        type="number"
-                        min="-40"
-                        max="50"
-                        placeholder="Enter the temperature"
-                        class="form-control"
-                        required>
-                        <!-- this 'required' element doesnt work-->
+                <!--WEATHER web form-->
+                <h3 id="test">Choose your ideal weather</h3>
+                <div class="row">
+                    <div class="col-3">
+                        <select class="form-control" id="weather-input" required>
+                            <!-- this 'required' element doesnt work-->
+                            <option>Choose your ideal weather</option>
+                            <option>Sun</option>
+                            <option>Cloud</option>
+                            <option>Rain</option>
+                            <option>Snow</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <!--DATE form-->
-        <h3 id="test">Choose your ideal date</h3>
-            <form action="/action_page.php">
+                <!-- Temperature form-->
+                <div class="col-3">
+                    <div class="mb-3">
+                        <input
+                            id="temp-input"   
+                            type="number"
+                            max="50"
+                            min="-40"
+                            placeholder="Enter the temperature"
+                            class="form-control"
+                            required>
+                            <!-- this 'required' element doesnt work-->
+                    </div>
+                </div>
+            
+                <!--DATE form-->
+                <h3 id="test">Choose your ideal date</h3>
+                
                 <input type="date" id="date-input" name="date" required>
                 <!-- this 'required' element doesnt work-->
-            </form>
-            
-            <div class="col-3">
-                <button type="submit" class="btn btn-primary" id="book-button" >Book</button>
-            </div>
 
+                <div class="col-3">
+                    <button type="submit" class="btn btn-primary" id="book-button" >Book</button>
+                </div>
+            </form>    
+        </div>
         
     </section>
 
@@ -99,6 +96,6 @@
     <footer>     
         <p>please see the github for the source code <a href="https://github.com/ladansm/codefirstteam5">here</a></p>
     </footer>
-<script src="index.js" > </script>
+<script src="index.js"> </script>
 </body>
 </html>
