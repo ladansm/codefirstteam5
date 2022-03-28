@@ -1,9 +1,10 @@
 # codefirstteam5
 This is how the web app will work:
 
-Section with id=welcomeAndForm
-    Welcome & introduction
-    Webform where the user can state what weather they would like
+1. Webform takes input of temperature, weather type and location
 
-Sections with id=forecast
-    This will be blank in index.html but will be written by a DOM depending on the output of the webform
+2. This input is parsed to a javaScript DOM
+
+3. This DOM rewrites the html of the section with id="welcomeAndForm" 
+
+4. This new html will be the weather forecast that the user has requested
