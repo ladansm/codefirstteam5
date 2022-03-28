@@ -8,3 +8,5 @@ This is how the web app will work:
 3. This DOM rewrites the html of the section with id="welcomeAndForm" 
 
 4. This new html will be the weather forecast that the user has requested
+
+This site is hosted [here using GitHub Pages](https://ladansm.github.io/codefirstteam5/)
