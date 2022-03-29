@@ -14,3 +14,5 @@ This is how the web app works:
 Tip: choose rain for a hidden Easter Egg ;-)
 
 This site is hosted [here using GitHub Pages](https://ladansm.github.io/codefirstteam5/)
+
+If the app does not work for any reason, please open an Issue in this repo's issue tracker
