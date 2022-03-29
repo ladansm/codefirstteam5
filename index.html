@@ -37,7 +37,7 @@
             <!-- the form starts here -->
             <form name="mainForm" id="mainForm" class="center" required>
                 <div class="row"> 
-                    <div class="col-4">
+                    <div>
                         <div class="mb-3">
                             <input
                                 type="text"
@@ -51,9 +51,9 @@
                 </div>
 
                 <!--WEATHER web form-->
-                <h3 id="test">Choose your ideal weather</h3>
+                <h3>Choose your ideal weather</h3>
                 <div class="row">
-                    <div class="col-4">
+                    <div>
                         <select class="form-control" name="weather-input" id="weather-input">
                             <!-- this 'required' element doesnt work-->
                             <option value="" selected>Choose your ideal weather</option>
@@ -66,7 +66,7 @@
                 </div>
 
                 <!-- Temperature form-->
-                <div class="col-3">
+                <div>
                     <div class="mb-3">
                         <input
                             id="temp-input"
@@ -82,12 +82,13 @@
                 </div>
             
                 <!--DATE form-->
-                <h3 id="test">Choose your ideal date</h3>
+                <h3>Choose your ideal date</h3>
                 
                 <input type="date" id="date-input" name="date" >
                 <!-- this 'required' element doesnt work-->
 
-                <div class="col-3">
+                <div>
+                    <br>
                     <button type="click" class="btn btn-primary" id="book-button" >Book</button>
                 </div>
             </form>    
