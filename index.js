@@ -14,6 +14,18 @@ function makeForecast(event){
         alert("Weather must be filled out");
         return false;
     }
+
+    let rain = "";
+    if (weather == "Rain") {
+        rain = `<div>You made it rain!<br>
+        <audio controls autoplay hidden>
+         <source src="https://www.rainymood.com/audio1112/0.m4a" type="audio/mp4" />
+         <source src="https://www.rainymood.com/audio1112/0.ogg" type="audio/ogg" />
+         <source src="https://www.rainymood.com/audio1112/0.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+        </audio>
+        </div>`;
+    }
     
     let temp = document.forms["mainForm"]["temp-input"].value;
     if (temp == "") {
@@ -28,12 +40,11 @@ function makeForecast(event){
     }
 
     //this is what the HTML will be rewritten with
-    forecast.innerHTML = `<h3>Thank you for booking your break with us</h3>
-        <h4>Summary</h4>
-        <div id="date">The weather on ${date}</div>
-        <div id="location">In ${city}</div>  
+    forecast.innerHTML = `<h3>The weather forecast for ${city} on ${date} is as follows:</h3>
         <div id="weather">The sky will have: ${weather}</div>
-        <div id="temp">With a temperature of: ${temp}&deg;C</div>`
+        <div id="temp">The temperature will be: ${temp}&deg;C</div>
+        <div>Thank you for using our services</div>
+        ${rain}`
 
 };
 
