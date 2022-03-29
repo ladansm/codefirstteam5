@@ -6,6 +6,29 @@ section{
     text-align: center;
 }
 
+h1 {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 5em;
+    font-size: 8vw;
+}
+
+h2 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 3em;
+    font-size: 4vw;
+}
+
+h3 {
+    font-family: 'Lobster Two', cursive;  
+    font-size: 2em;
+    font-size: 3vw;
+}
+
+p {
+    font-family: 'Lobster Two', cursive;
+    font-size: 1.5em;
+}
+
 #image-earth{
     width:200px;
     border-radius: 50%;
@@ -23,4 +46,10 @@ section{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
+}
+
+.hurricane {
+    font-family: 'Hurricane', cursive;
+    font-size: 2em;
+    font-size: 3vw;
 }

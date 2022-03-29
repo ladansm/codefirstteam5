@@ -41,9 +41,9 @@ function makeForecast(event){
 
     //this is what the HTML will be rewritten with
     forecast.innerHTML = `<h3>The weather forecast for ${city} on ${date} is as follows:</h3>
-        <div id="weather">The sky will have: ${weather}</div>
-        <div id="temp">The temperature will be: ${temp}&deg;C</div>
-        <div>Thank you for using our services</div>
+        <p>The sky will have: ${weather}</p>
+        <p>The temperature will be: ${temp}&deg;C</p>
+        <p class="hurricane">Thank you for using our services</p>
         ${rain}`
 
 };
