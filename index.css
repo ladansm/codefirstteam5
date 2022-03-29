@@ -1,13 +1,15 @@
 body{
     text-align: center;
 }
+
 h1{
     color: purple;
-
 }
+
 section{
     text-align: center;
 }
+
 #image-earth{
     width:200px;
 }
